@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Outras formatações formatações</h1>
+    <h2>Código fonte e pré-formatação</h2>
+    <p>Para mostrar comandos ou códigos como <code>int main(int argc, char** argv)</code> usamos a tag code.</p>
+    <pre>
+        <code>
+            #define SUCESSO 0
+            #include &lt;stdio&gt;
+
+            int main(int argc, char** argv){
+                int num, num2, res;
+
+                printf("Digite dois números: ");
+                scanf("%i %i", &num, &num2);
+
+                res = num + num2;
+
+                printf("O resultado da soma de %i e %i é igual a %i", num, num2, res);
+
+                return 0;
+            }        
+
+        </code>
+
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria Sócrates: <q>Conhece-te a ti mesmo e conhecerás o universo e os deuses</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo xxx, em seu livro xxxxx: </p>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis vel est, fugiat ab sit neque, magni a cumque placeat, illo nisi. Officiis magnam officia cumque enim debitis, atque numquam?</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando.</p>
+    <h2>Texto invertido</h2>
+    <bdo dir="rtl">Aqui o texto está invertido</bdo>
+
+</html>
