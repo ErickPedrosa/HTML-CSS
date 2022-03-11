@@ -1,30 +1,30 @@
-##HTML-CSS
+# HTML-CSS
 Meu repositório pessoal de estudos sobre HTML5 e CSS3
 
-Acesse os exercícios do Capítulo 4
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2004/">Acesse os exercícios do Capítulo 4<a>
 
-Acesse os exercícios do Capítulo 5
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2005/">Acesse os exercícios do Capítulo 5<a>
 
-Acesse os exercícios do Capítulo 6
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2006/">Acesse os exercícios do Capítulo 6<a>
 
-Acesse os exercícios do Capítulo 7
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2007/">Acesse os exercícios do Capítulo 7<a>
 
-Acesse os exercícios do Capítulo 8
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2008/">Acesse os exercícios do Capítulo 8<a>
 
-Acesse os exercícios do Capítulo 9
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2009/">Acesse os exercícios do Capítulo 9<a>
 
-Acesse os exercícios do Capítulo 10
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2010/">Acesse os exercícios do Capítulo 10<a>
 
-Acesse os exercícios do Capítulo 11
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2011/">Acesse os exercícios do Capítulo 11<a>
 
-Acesse os exercícios do Capítulo 12
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2012/">Acesse os exercícios do Capítulo 12<a>
 
-Acesse os exercícios do Capítulo 13
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2013/">Acesse os exercícios do Capítulo 13<a>
 
-Acesse os exercícios do Capítulo 14
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2014/">Acesse os exercícios do Capítulo 14<a>
 
-Acesse os exercícios do Capítulo 15
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2015/">Acesse os exercícios do Capítulo 15<a>
 
-Acesse os exercícios do Capítulo 16
+<a href="https://erickpedrosa.github.io/HTML-CSS/Cap%2016/">Acesse os exercícios do Capítulo 16<a>
 
-Acesse os Desafios
+<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/">Acesse os Desafios<a>
