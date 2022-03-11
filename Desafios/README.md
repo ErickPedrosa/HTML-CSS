@@ -18,7 +18,7 @@ Exercícios referentes aos desafios do pdf;
 
 <a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2009/index.html">Acesse o Desafio 09<a>;
 
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2010_teste/index.html">Acesse o Desafio 10 - Minha Tentativa<a>;
+<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2010_Teste/index.html">Acesse o Desafio 10 - Minha Tentativa<a>;
 
 <a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2010/android.html">Acesse o Desafio 10 - Seguindo o feito nos vídeos do Prof. Guanabara<a>;
 
