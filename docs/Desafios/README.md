@@ -1,6 +1,6 @@
 Exercícios referentes aos desafios do pdf;
 
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%20001/index.html">Acesse o Desafio 01<a>;
+<a href="https://erickpedrosa.github.io/HTML-CSS/docs/Desafios/Ex.%20001/index.html">Acesse o Desafio 8 01<a>;
 
 <a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%20002/index.html">Acesse o Desafio 02<a>;
 
