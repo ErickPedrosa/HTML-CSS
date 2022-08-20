@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+@font-face {
+    font-family: "Bebas";
+    src: url("pacote-projeto-d010/fontes/Bebas_Neue/BebasNeue-Regular.ttf") format('truetype');
+}
+
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #84E1AD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: "android", Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding: 10px;
+    text-align: left;
+    color:#1E5C38;
+}
+h2{
+    font-family: "android", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    text-align: left;
+    color:#1E5C38;
+    background-image: linear-gradient(to right, #C5EBD6, #ffffff);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 2em;
+}
+div#video{
+    background-color: #1E5C38;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, #50D27F, #1E5C38);
+    height: 218px;
+    margin: 0px;
+    color: white;
+}
+header > h1{
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
+    font-size: 50px;
+    font-family: "Bebas", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 20px;
+    color: white;
+    
+
+}
+header > p{
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.144);
+    padding: 0px 0px 15px 0px;
+    font-size: 1.2em;
+    
+}
+
+nav{
+    text-align: center;
+    width: 606px;
+   
+}
+nav > a{
+    display: inline-block;
+    height: 58px;
+    width: 140px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+nav > a:hover{
+    background-color: #50D27F;
+    text-decoration: none;
+    color: #1E5C38;
+}
+
+
+
+
+main{
+    width: auto;
+    background-color: white;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+    min-width: 500px;
+    max-width: 1000px;
+    
+}
+
+div#extra{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #C5EBD6;
+    text-align: justify;
+}
+h3{
+    background-color: #3EA966;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+ul{
+    text-align: left;
+    padding-left: 78px;
+    padding-right: 160px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+a{
+    color: #1E5C38;
+    text-decoration: none;
+}
+p > a::after{
+    content: " 🔗";
+    
+}
+
+footer > div{
+    background-color: #1E5C38;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.linkRodape{
+    color: white;
+    text-decoration: none;
+}
+
+
+strong{
+    color: #1E5C38;
+}
