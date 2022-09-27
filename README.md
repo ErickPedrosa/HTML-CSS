@@ -5,6 +5,5 @@
 
 <div>
     <p><a href="https://erickpedrosa.github.io/HTML-CSS/index.html">Acesse os sites</a></p>
-    <p><a href="Alura/aluraSumario.html">Alura<a></p>
-    <p><a href="CEV/cevSumario.html">Curso em Vídeo<a></p>
+    
 </div>
