@@ -307,6 +307,11 @@ body{
     font-size: 24px;
 }
 
+.cartao__botao--mapa::before{
+    content: "\e909";
+    font-size: 24px;
+}
+
 .cartao__botao--destaque{
     width: 100%;
     grid-column: span 2;
@@ -319,6 +324,10 @@ body{
 
 .cartao--recentes{
     display: none;
+}
+
+.cartao__imagem--artigo{
+    height: 150px;
 }
 
 @media screen and (min-width: 1200px){
