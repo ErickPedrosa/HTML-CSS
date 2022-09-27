@@ -1,4 +1,9 @@
-# HTML-CSS
-Meu repositório pessoal de estudos sobre HTML5 e CSS3
+<p>HTML-CSS</p>
 
-<a href="https://erickpedrosa.github.io/HTML-CSS/">Acesse aqui a visualização do site dos exercícios deste repositório.<a>
+<p>Meu repositório pessoal de estudos sobre HTML5 e CSS3</p>
+
+
+<div>
+    <p><a href="Alura/aluraSumario.html">Alura<a></p>
+    <p><a href="CEV/cevSumario.html">Curso em Vídeo<a></p>
+</div>
