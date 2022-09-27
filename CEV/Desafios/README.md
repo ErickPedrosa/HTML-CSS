@@ -1,24 +1,15 @@
 Exercícios referentes aos desafios do pdf;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2001/index.html">Acesse o Desafio 01<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2002/index.html">Acesse o Desafio 02<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2003/index.html">Acesse o Desafio 03<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2004/index.html">Acesse o Desafio 04<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2005/index.html">Acesse o Desafio 05<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2006/index.html">Acesse o Desafio 06<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2007/index.html">Acesse o Desafio 07<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2008/index.html">Acesse o Desafio 08<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2009/index.html">Acesse o Desafio 09<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2010_Teste/index.html">Acesse o Desafio 10 - Minha Tentativa<a>;
-
-<a href="https://erickpedrosa.github.io/HTML-CSS/Desafios/Ex.%2010/android.html">Acesse o Desafio 10 - Seguindo o feito nos vídeos do Prof. Guanabara<a>;
-
+<div>
+    <p><a href="Ex. 01/index.html">Desafio 01</a></p>
+    <p><a href="Ex. 02/index.html">Desafio 02</a></p>
+    <p><a href="Ex. 03/index.html">Desafio 03</a></p>
+    <p><a href="Ex. 04/index.html">Desafio 04</a></p>
+    <p><a href="Ex. 05/index.html">Desafio 05</a></p>
+    <p><a href="Ex. 06/index.html">Desafio 06</a></p>
+    <p><a href="Ex. 07/index.html">Desafio 07</a></p>
+    <p><a href="Ex. 08/index.html">Desafio 08</a></p>
+    <p><a href="Ex. 09/index.html">Desafio 09</a></p>
+    <p><a href="Ex. 10/android.html">Desafio 10 (1)</a></p>
+    <p><a href="Ex. 10_Teste/index.html">Desafio 10 (2 - Feito por mim)</a></p>
+    <p><a href="../cevSumario.html">Voltar</a></p>
+</div>
