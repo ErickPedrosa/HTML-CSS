@@ -6,11 +6,23 @@ body{
 
 }
 
+body > p{
+    padding-bottom: 20px;
+}
+
 .sumario{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
+}
+
+.link-botao{
+
+    background-color: rgb(200, 200, 200);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
 }
 
 .voltar{
