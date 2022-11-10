@@ -30,5 +30,4 @@ const body = document.querySelector("body");
 const linkBotao = document.querySelectorAll(".link-botao");
 const icone = document.querySelector(".icone");
 
-
 botao.onclick = function () { trocaSite() }
