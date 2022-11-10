@@ -1,14 +1,26 @@
+:root{
+    --padraoCor: rgb(224, 224, 224);
+    --padraoCorBotao: rgb(200, 200, 200);
+    --padraoCorFonte: black;
+    --noturnoCor: rgb(42, 42, 42);
+    --noturnoCorBotao: rgb(84, 84, 84);
+    --noturnoCorFonte: rgb(212, 212, 212);
+}
+
+
 body{
-    background-color: rgb(224, 224, 224);
+    background-color: var(--padraoCor);
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--padraoCorFonte);
 
 }
 
 body > p{
     padding-bottom: 20px;
 }
+
 
 .sumario{
     display: grid;
@@ -19,7 +31,7 @@ body > p{
 
 .link-botao{
 
-    background-color: rgb(200, 200, 200);
+    background-color: var(--padraoCorBotao);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px;
@@ -36,4 +48,27 @@ p{
 
 h1{
     margin-top: 50px;
+}
+
+
+.noturno{
+    background-color: var(--noturnoCor);
+    color: var(--noturnoCorFonte);
+}
+
+.link-botao.noturno{
+    background-color: var(--noturnoCorBotao);
+}
+
+button{
+    visibility: hidden;
+}
+
+img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
 }
