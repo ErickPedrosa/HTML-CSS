@@ -5,7 +5,6 @@ function trocaSite(){
     if (noturno == false) {
         noturno = true;
 
-
         icone.src = "../../../HTML-CSS/icons/lua.png";
 
     }else{
