@@ -19,8 +19,13 @@ body{
 
 body > p{
     padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
+a:visited{
+    color: var(--padraoCorFonte);
+}
 
 .sumario{
     display: grid;
@@ -58,6 +63,10 @@ h1{
 
 .link-botao.noturno{
     background-color: var(--noturnoCorBotao);
+}
+
+a.noturno, .noturno a:visited{
+    color: var(--noturnoCorFonte);
 }
 
 button{

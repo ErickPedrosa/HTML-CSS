@@ -1,17 +1,29 @@
-var noturno = false;
+var noturno = true;
 
+function cookieModo(){
+    modo = document.cookie.split(';');
+    modo = modo[modo.length - 1];
+    modo = modo.split("=")[1];
 
-function trocaSite(){
-    if (noturno == false) {
-        noturno = true;
+    if("false" == modo){
+        body.classList.toggle("noturno");
 
-        icone.src = "../../../HTML-CSS/icons/lua.png";
-
-    }else{
+        for(let counter = 0; counter < linkBotao.length; counter++){
+            linkBotao[counter].classList.toggle("noturno");
+        }
         noturno = false;
 
-        icone.src = "../../../HTML-CSS/icons/sol.png";
+    }
+    
+}
 
+function trocaSite(){
+    if(noturno == true){
+        noturno = false;
+        document.cookie = `modoNoturno=${noturno}`;
+    }else{
+        noturno = true;
+        document.cookie = `modoNoturno=${noturno}`;
     }
 
     body.classList.toggle("noturno");
