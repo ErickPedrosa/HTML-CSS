@@ -16,36 +16,88 @@
 
     <!--   Main JS   -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/type.js"></script>
 
 </head>
 <body>
     
     <main>
+        <div class="container">
+            <button><img src="images/prev.png" alt="Previous" class="prev"></button>
 
-        <img src="#" alt="pokemon" class="pokemon__image">
+            <h1><span class="idPokemon">XX</span> - <span class="namePokemon">Name</span></h1>
 
-        <h1 class="pokemon__data">
-            <span class="pokemon__number"></span> - 
-            <span class="pokemon__name"></span>
-        </h1>
-
-        <form class="form">
-            <input 
-            type="search"
-            class="input__search"
-            placeholder="Name or Number"
-            required
-            >
-        </form>
-
-        <div class="buttons">
-            <button class="button btn-prev">Prev &lt</button>
-            <button class="button btn-next">Next &gt</button>
+            <button><img src="images/next.png" alt="Next" class="next"></button>
         </div>
+        
+            
+        <section class="info">
+            <img src="#" alt="Pokémon Image" class="pokemonImage">
+            
+            <div class="typesContainer">
+                <!-- Exemplo tipo -->
+                <!--<div class="type"><span class="type-text">Fire</span></div>-->
+                
+            </div>
 
-        <img src="images/pokedex.png" alt="pokedex" class="pokedex">
+
+            <section class="atributes">
+                <h2 class="titulo-attr">Atributes</h2>
+
+                <div class="height"> 
+                    <span>Height: </span> 
+                    <span class="height-text"></span>
+                    <span> m</span>
+                </div>
+                
+                <div class="weight">
+                    <span>Weight: </span> 
+                    <span class="weight-text"></span>
+                    <span> kg</span>
+                </div>
+                
+                <div class="id">
+                    <span>Nº: </span> 
+                    <span class="id-text"></span>
+                </div>
+                
+                <div class="abilities">
+                    <span>Abilities: </span> 
+                    <span class="abilities-text"></span>
+                </div>
+            
+            </section>
+
+            <section class="weakness-container">
+                <h2>Weakness</h2>
+                <div class="weakness"></div>
+                
+            </section>
+
+            <section class="advantages-container">
+                <h2>Advantages</h2>
+                <div class="advantages"></div>
+                
+            </section>
+
+            
+        </section>
+        
+             
 
     </main>
-
+    
+    <div class="search-icon search-ic"><img src="images/search.png" alt="Buscar" class="search-image search-ic"></div>
+    
+    
+    <form class="form">
+        <input 
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+        >
+    </form>
+    
 </body>
 </html>
