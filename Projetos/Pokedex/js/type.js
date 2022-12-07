@@ -24,61 +24,41 @@ let danoCausado;
 
 function inicializaArray(){
     let dano = [];
-    allTypes.forEach( (x, i) => {
+    allTypes.forEach( (x) => {
         dano.push(x);
     } )
 
     return dano;
 }
 
-
-const getType = (pokemon) => {
-
+const getDamage = (types) => {
     
     danoRecebido = inicializaArray();
     danoCausado = inicializaArray();
+
+    types.forEach( (type) => {
+        calcAdvantages(type);
+    })
+
+
+}
+
+const getType = async (pokemon) => {
+
+    let types = []
+
+    await pokemon.types.forEach( async (element) => {
+
+        const APIResponse = await fetch(`https://pokeapi.co/api/v2/type/${element.type.name}`);
+              
+        if(APIResponse.status === 200){
+            const data = await APIResponse.json();
+            types.push(data);
+
+        } 
+    } )
+    return types;
     
-    let ok = false;
-    let first = true;
-
-    console.log("1");
-    do {
-        
-        if(first){
-
-
-            pokemon.types.forEach( async (element) => {
-                console.log("2");
-        
-                const APIResponse = await fetch(`https://pokeapi.co/api/v2/type/${element.type.name}`);
-                
-        
-                console.log("3");
-                
-                if(APIResponse.status === 200){
-                    const data = await APIResponse.json();
-                    console.log("4");
-        
-        
-                    calcAdvantages(data);
-                
-                    console.log("5");
-        
-                }
-                console.log("6");
-                ok == true;
-                
-            } )
-
-
-
-            first = false;
-        }
-        
-    
-    console.log("7");
-    } while (ok);
-    return [danoRecebido, danoCausado];
 }
 
 
@@ -108,7 +88,7 @@ function calcAdvantages(type) {
         
     })
 
-    type.damage_relations.half_damage_from.forEach( (t) => {
+    type.damage_relations.half_damage_to.forEach( (t) => {
         danoCausado[allTypes.indexOf(t.name) + 1] -= (1/2);
         //console.log("Da metade do dano em " + t.name);
         
@@ -131,6 +111,7 @@ function calcAdvantages(type) {
         
     //console.log(allTypes);
     //console.log(danoRecebido);
+    //console.log(type);
     //console.log(danoCausado);
 }
 

@@ -33,6 +33,7 @@ const renderPokemon = async (pokemon) => {
     const data = await fetchPokemon(pokemon);
     
     if(data){
+        
         console.log(data);
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id;
@@ -45,7 +46,17 @@ const renderPokemon = async (pokemon) => {
         weight.innerHTML = weg / 10; //Convertendo de hectogramas para kg;
 
         pokemonImage.style.display = 'block';
-        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        if (data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']) {
+            
+            pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];    
+        
+        }else{
+
+            pokemonImage.src = data['sprites']['other']['official-artwork']['front_default']
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
+        
+        }
+        
 
         abilities.innerHTML = ""
         data.abilities.forEach( (ability) => {
@@ -101,48 +112,51 @@ const renderWeakAndAdv = async (pokemon) => {
     advantagesContainer.innerHTML = '';
     
 
-    const dano = await getType(pokemon);
-    const [danoR, danoC] = dano;
-
-    
-
-    danoR.forEach( (tipo, i) => {
-        if(tipo >= 1){
+    const typ = await getType(pokemon);
+    setTimeout( () => { 
+        getDamage(typ) 
+        
+        danoRecebido.forEach( (tipo, i) => {
             
-            
+            if(tipo >= 1.5){
+                
+                const div = document.createElement("div");
+                const span = document.createElement("span");
 
-            const div = document.createElement("div");
-            const span = document.createElement("span");
+                div.classList.add("type");
+                span.classList.add("type-text");
 
-            div.classList.add("type");
-            span.classList.add("type-text");
+                
+                span.innerHTML = danoRecebido[i - 1];
 
-            span.innerHTML = tipo[i - 1];
+                div.appendChild(span);
+                weaknessContainer.appendChild(div);
 
-            div.appendChild(span);
-            weaknessContainer.appendChild(div);
+            }
+        })
+        console.log(danoCausado);
+        danoCausado.forEach( (tipo, i) => {
+            if(tipo >= 1.5){
 
-        }
-    })
+                const div = document.createElement("div");
+                const span = document.createElement("span");
 
-    danoC.forEach( (tipo, i) => {
-        if(tipo >= 1.5){
+                div.classList.add("type");
+                span.classList.add("type-text");
 
-            const div = document.createElement("div");
-            const span = document.createElement("span");
+                span.innerHTML = danoCausado[i - 1];
 
-            div.classList.add("type");
-            span.classList.add("type-text");
+                div.appendChild(span);
+                advantagesContainer.appendChild(div);
 
-            span.innerHTML = tipo[i - 1];
+                
+            }
+        })
 
-            div.appendChild(span);
-            advantagesContainer.appendChild(div);
 
-            
-        }
-    })
 
+
+    }, 10);
 }
 
 
