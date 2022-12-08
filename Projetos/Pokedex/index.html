@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <!--   Links   -->
+    <link rel="shortcut icon" href="favicons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--   Main JS   -->
+    <script defer src="js/index.js"></script>
+    <script defer src="js/type.js"></script>
+
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <button><img src="images/prev.png" alt="Previous" class="prev"></button>
+
+            <h1><span class="idPokemon">XX</span> - <span class="namePokemon">Name</span></h1>
+
+            <button><img src="images/next.png" alt="Next" class="next"></button>
+        </div>
+        
+            
+        <section class="info">
+            <div class="imgContainer">
+                <img src="#" alt="Pokémon Image" class="pokemonImage">
+            </div>
+
+            <div class="typesContainer">
+                <!-- Exemplo tipo -->
+                <!--<div class="type"><span class="type-text">Fire</span></div>-->
+                
+            </div>
+
+
+            <section class="atributes">
+                <h2 class="titulo-attr">Atributes</h2>
+
+                <div class="height"> 
+                    <span>Height: </span> 
+                    <span class="height-text"></span>
+                    <span> m</span>
+                </div>
+                
+                <div class="weight">
+                    <span>Weight: </span> 
+                    <span class="weight-text"></span>
+                    <span> kg</span>
+                </div>
+                
+                <div class="id">
+                    <span>Nº: </span> 
+                    <span class="id-text"></span>
+                </div>
+                
+                <div class="abilities">
+                    <span>Abilities: </span> 
+                    <span class="abilities-text"></span>
+                </div>
+            
+            </section>
+
+            <section class="weakness-container">
+                <h2>Weakness</h2>
+                <div class="weakness"></div>
+                
+            </section>
+
+            <section class="advantages-container">
+                <h2>Advantages</h2>
+                <div class="advantages"></div>
+                
+            </section>
+
+            
+        </section>
+        
+             
+
+    </main>
+    
+    <div class="search-icon search-ic"><img src="images/search.png" alt="Buscar" class="search-image search-ic"></div>
+    
+    
+    <form class="form">
+        <input 
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+        >
+    </form>
+    
+</body>
+</html>
