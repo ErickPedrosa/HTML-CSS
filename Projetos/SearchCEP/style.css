@@ -1,0 +1,43 @@
+body{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(104, 202, 104);   
+
+    
+}
+form{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(104, 202, 104);
+}
+input{
+    width: 160px;
+    height: 50px;
+    text-align: center;
+
+    border-radius: 10px 0 0 10px;
+    border: solid green 1px;
+
+    background-color: rgb(190, 233, 190);
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+}
+button{
+    width: 80px;
+    height: 50px;
+
+    border-radius: 0 10px 10px 0;
+    border: solid green 1px;
+
+    background-color: rgb(190, 233, 190);
+}
+.limpar{
+    width: 240px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
