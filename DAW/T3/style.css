@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background-color: rgb(236, 236, 236);
+
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+main{
+
+    text-align: justify;
+    font-size: 1.15em;
+
+    background-color: rgb(236, 236, 236);
+}
+
+table, td, tr, th{
+    border: 1px solid black;
+}
+table{
+    text-align: center;
+}
+
+tr{
+    height: 50px;
+}
+td{
+    width: 100px;
+}
+.prova{
+    position: absolute;
+    left: 10vw;
+
+    width: 75vw;
+    padding: 30px;
+}
+.gabarito{
+    position: absolute;
+    left: 20vw;
+
+
+    width: 50vw;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.escondido{
+    visibility: hidden;
+}
+button{
+    margin: auto;
+    margin-top: 40px;
+    width: 100px;
+}
+        

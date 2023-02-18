@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <main>
+
+        
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div>
+                    <label for="codigo">Código: </label>
+                    <input type="number" required minlength="3" maxlength="8" placeholder="XXX">
+                </div>
+                
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" required >
+                </div>   
+                
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" required >
+                </div>  
+                
+                <div>
+                    <label for="sexo">Sexo: </label>
+
+                    <input type="radio" required name="sexo" id="masc">
+                    <label for="masc">Masculino</label>
+
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminino</label>
+                </div>  
+
+                <div>
+                    <label for="idade">Idade: </label>
+                    <input type="number" name="idade" id="idade" required>
+                </div>
+
+                <div>
+                    <label for="cartao">Cartão de Crédito: </label>
+                    <select name="cartao" id="cartao" required>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="visa">Visa</option>
+                        <option value="american-express">American Express</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+
+
+                <div>
+                    <label for="cargo">Cargo: </label>
+                    <select name="cargo" id="cargo" required>
+                        <option value="junior">Analista Júnior</option>
+                        <option value="senior">Analista Pleno</option>
+                        <option value="pleno">Analista Sênior</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Dados Pessoais: </label><br>
+
+                    <input type="checkbox" name="fumante" id="fumante">
+                    <label for="fumante">Fumante</label><br>
+
+                    <input type="checkbox" name="exercicios" id="exercicios">
+                    <label for="exercicios">Pratica Exercícios Físicos</label><br>
+
+                    <input type="checkbox" name="bebida" id="bebida">
+                    <label for="bebida">Consome Bebidas Alcoólicas</label><br>
+                </div>
+
+                <div>
+                    <label for="experiencia">Experiências Profissionais:</label><br>
+                    <textarea name="" id="" cols="60" rows="5"></textarea>
+                </div>
+            </fieldset>
+
+            <button class="limpar">Limpar</button>
+            <input type="submit" value="Enviar" id="submit">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+header{
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5em;
+    padding: 40px;
+
+    text-align: center;
+}
+
+main{
+    width: 75vw;
+    margin: auto;
+    padding: 30px;
+
+    text-align: justify;
+    font-size: 1.15em;
+
+    background-color: rgb(236, 236, 236);
+}
+
+h1{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h2{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+figure{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15px;
+}
+img{
+    width: 100%;
+}
+figcaption{
+    text-align: left;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+}
+
+p{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+ul{
+    padding-left: 30px;
+}
+li{
+    padding-top: 10px;
+}
+
+
+footer{
+    height: 100px;
+    width: 75vw;
+    margin: auto;
+
+
+
+    display: flex;
+    align-content: end;
+    justify-content: space-between;
+
+    
+}
+
+footer > a{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    color: rgb(75, 71, 71);
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#icon{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
+
+#icon2{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
