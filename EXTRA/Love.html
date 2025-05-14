@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Dia dos Namorados</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000 linear-gradient(#e67676, #c7baba) center/cover no-repeat;
+      overflow: hidden;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .start-screen, .main-content {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      backdrop-filter: blur(2px);
+    }
+    .start-screen button {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .main-content {
+      display: none;
+      text-align: center;
+      gap: 1rem;
+    }
+    .photo img {
+      width: 20vw;
+      height: 50vh;
+      object-fit: cover;
+      border-radius: 10%;
+      border: 4px solid white;
+    }
+    .hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      animation: float 6s linear infinite;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="start-screen">
+    <button onclick="startLove()">Clique ❤️</button>
+  </div>
+
+  <div class="main-content">
+    <div class="hearts" id="hearts"></div>
+    
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/5w40ZYhbBMAlHYNDaVJIUu?utm_source=generator" 
+      width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+    
+    <div class="photo">
+      <img src="Foto.jpg" alt="Casal">
+    </div>
+    
+    <p style="font-size: 1.5rem;">Eu te amo há:</p>
+    <div id="time" style="font-size: 1.2rem;"></div>
+  </div>
+
+  <script>
+    const startDate = new Date('2023-05-13T19:00:00'); // Mude para sua data
+
+    function startLove() {
+      document.querySelector('.start-screen').style.display = 'none';
+      document.querySelector('.main-content').style.display = 'flex';
+      generateHearts();
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    function updateTimer() {
+      const now = new Date();
+      let diff = Math.floor((now - startDate) / 1000);
+
+      const years = Math.floor(diff / (365 * 24 * 3600));
+      diff %= 365 * 24 * 3600;
+      const months = Math.floor(diff / (30 * 24 * 3600));
+      diff %= 30 * 24 * 3600;
+      const days = Math.floor(diff / (24 * 3600));
+      diff %= 24 * 3600;
+      const hours = Math.floor(diff / 3600);
+      diff %= 3600;
+      const minutes = Math.floor(diff / 60);
+
+      document.getElementById('time').innerText =
+        `${years} anos, ${months} meses, ${days} dias, ${hours} horas e ${minutes} minutos`;
+    }
+
+    function generateHearts() {
+      const container = document.getElementById('hearts');
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.textContent = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        container.appendChild(heart);
+      }
+    }
+  </script>
+</body>
+</html>
