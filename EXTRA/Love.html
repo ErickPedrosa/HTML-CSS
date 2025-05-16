@@ -17,6 +17,7 @@
       align-items: center;
       justify-content: center;
     }
+
     .start-screen, .main-content {
       position: absolute;
       top: 0; left: 0;
@@ -26,7 +27,11 @@
       align-items: center;
       flex-direction: column;
       backdrop-filter: blur(2px);
+      padding: 1rem;
+      box-sizing: border-box;
+      text-align: center;
     }
+
     .start-screen button {
       background: transparent;
       border: 2px solid white;
@@ -35,19 +40,36 @@
       padding: 1rem 2rem;
       border-radius: 20px;
       cursor: pointer;
+      transition: background 0.3s;
     }
+
+    .start-screen button:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
     .main-content {
       display: none;
-      text-align: center;
       gap: 1rem;
     }
+
     .photo img {
-      width: 20vw;
-      height: 50vh;
+      width: 80vw;
+      max-width: 300px;
+      height: auto;
+      max-height: 50vh;
       object-fit: cover;
       border-radius: 10%;
       border: 4px solid white;
     }
+
+    iframe {
+      width: 90%;
+      max-width: 320px;
+      height: 80px;
+      border: none;
+      border-radius: 12px;
+    }
+
     .hearts {
       position: absolute;
       width: 100%;
@@ -55,11 +77,13 @@
       z-index: 0;
       pointer-events: none;
     }
+
     .heart {
       position: absolute;
       font-size: 20px;
       animation: float 6s linear infinite;
     }
+
     @keyframes float {
       0% {
         transform: translateY(100vh);
@@ -68,6 +92,27 @@
       100% {
         transform: translateY(-10vh);
         opacity: 0;
+      }
+    }
+
+    #time {
+      font-size: 1.1rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      .start-screen button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+      }
+
+      #time {
+        font-size: 1rem;
+      }
+
+      .photo img {
+        width: 90vw;
+        max-height: 40vh;
       }
     }
   </style>
@@ -79,22 +124,21 @@
 
   <div class="main-content">
     <div class="hearts" id="hearts"></div>
-    
-    <iframe style="border-radius:12px" 
-      src="https://open.spotify.com/embed/track/4y5bvROuBDPr5fuwXbIBZR?utm_source=generator" 
-      width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+    <iframe src="https://open.spotify.com/embed/track/4y5bvROuBDPr5fuwXbIBZR?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
     </iframe>
-    
+
     <div class="photo">
       <img src="Foto.jpg" alt="Casal">
     </div>
-    
+
     <p style="font-size: 1.5rem;">Eu te amo há:</p>
-    <div id="time" style="font-size: 1.2rem;"></div>
+    <div id="time"></div>
   </div>
 
   <script>
-    const startDate = new Date('2023-05-13T19:00:00'); // Mude para sua data
+    const startDate = new Date('2023-05-13T19:00:00');
 
     function startLove() {
       document.querySelector('.start-screen').style.display = 'none';
